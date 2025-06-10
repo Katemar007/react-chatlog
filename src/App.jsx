@@ -1,4 +1,6 @@
 import './App.css';
+import messages from './data/messages.json';
+import ChatEntry from './components/ChatEntry';
 
 const App = () => {
   return (
@@ -7,8 +9,7 @@ const App = () => {
         <h1>Application title</h1>
       </header>
       <main>
-        {/* Wave 01: Render one ChatEntry component
-        Wave 02: Render ChatLog component */}
+        <ChatEntry {...messages[0]} />
       </main>
     </div>
   );
