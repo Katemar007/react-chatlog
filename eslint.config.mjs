@@ -65,7 +65,7 @@ export default [{
         "comma-dangle": ["warn", "only-multiline"],
         "dot-notation": "warn",
         "space-before-function-paren": "off",
-        "indent": ["warn", 2],
+        "indent": ["warn", 'tab'],
         "padded-blocks": "warn",
         "no-trailing-spaces": "warn",
         "array-bracket-spacing": "warn",

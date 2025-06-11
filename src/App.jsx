@@ -1,18 +1,18 @@
 import './App.css';
-import messages from './data/messages.json';
-import ChatEntry from './components/ChatEntry';
+import entries from './data/messages.json';
+import ChatLog from './components/ChatLog';
 
 const App = () => {
-  return (
-    <div id="App">
-      <header>
-        <h1>Application title</h1>
-      </header>
-      <main>
-        <ChatEntry {...messages[0]} />
-      </main>
-    </div>
-  );
+	return (
+		<div id="App">
+			<header>
+				<h1>Application title</h1>
+			</header>
+			<main>
+				<ChatLog entries={entries} />
+			</main>
+		</div>
+	);
 };
 
 export default App;
