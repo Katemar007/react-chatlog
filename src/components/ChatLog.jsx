@@ -2,11 +2,11 @@
 import PropTypes from 'prop-types';
 import ChatEntry from './ChatEntry';
 
-const ChatLog = ({entries}) => {
+const ChatLog = ({ entries, onToggleLike }) => {
 	return (
 		<div id="ChatLog">
 			{entries.map((entry) => (
-				<ChatEntry key={entry.id} {...entry} />
+				<ChatEntry key={entry.id} {...entry} onToggleLike={onToggleLike} />
 			))}
 		</div>
 );
@@ -20,6 +20,8 @@ ChatLog.propTypes = {
 			timeStamp: PropTypes.string.isRequired,
 			liked: PropTypes.bool.isRequired
 		})
-	).isRequired
+	).isRequired,
+	onToggleLike: PropTypes.func.isRequired,
 };
+
 export default ChatLog;
