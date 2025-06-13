@@ -22,7 +22,7 @@ const App = () => {
 			<header>
 				<h1>Chat between {entries[0].sender} and {entries[1].sender}</h1>
 			</header>
-			<section id="heartWidget"className="widget">{totalLikes}❤️{totalLikes !== 1 ? 's' : ''}</section>
+			<section id="heartWidget"className="widget">{totalLikes}&nbsp;❤️{totalLikes !== 1 ? 's' : ''}</section>
 			<main>
 				<ChatLog entries={entries} onToggleLike={toggleLike} />
 			</main>
